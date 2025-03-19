@@ -1,0 +1,480 @@
+*{
+    padding: 0%;
+    margin: 0px;
+}
+header {
+    /* background-color: rgba(255, 255, 0,0,alpha); */
+    background-color: rgba(2, 93, 118, 0.8);
+    opacity:1 ;
+    padding: 15px 0;
+    position: fixed;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    float: right;
+}
+
+/* Styling for navigation links */
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: rgb(229, 230, 229);
+    text-decoration: underline;
+    transition: all 0.5s ease-out;
+}
+/* Topic block */
+/* Topic block styling */
+.topic-block {
+    height: 300px;
+    /* background-image: url(../static/asset/edited-bg-img.jpg); */
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+.topic-block::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 44%;
+  background-image: url('../static/asset/pexels-mdsnmdsnmdsn-3697718.jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9; /* Adjust the opacity as needed */
+  z-index: 1;
+}
+/* Styling for the title */
+.topic-block h1 {
+    font-family: 'Merriweather', serif; 
+    font-size: 2.5em;
+    position: relative;
+  z-index: 2; /* Ensure the text is above the background */
+    margin: 0;
+    background: transparent;
+    /* background-color: rgb(180, 216, 223);   */
+    padding: 10px 20px;
+    
+    border-radius: 8px;
+}
+/*  file or images upload*/
+.upload-block {
+    display:flex;
+    justify-content: center;
+    height: 300px;
+    width: 692px;
+    padding-top: 3px;
+    /* margin: top 0.5em; */
+    /* border-radius: 10px 10px 40px 10px; */
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+   /* background: radial-gradient(circle, rgb(2, 12, 78) 0%, rgb(19, 21, 22) 100%);  */
+    position: absolute;
+}
+.upload-block::before{
+  width: 150px;
+  height: 150px;
+  content: "";
+  background: linear-gradient(to right,rgb(142, 110, 255),rgb(208, 195, 255));
+  position: absolute;
+  border-radius: 50%;
+  right: -25%;
+  top: -25%;
+}
+.contain::before{
+  width: 150px;
+  height: 150px;
+  content: "";
+  background: linear-gradient(to right,rgb(86, 51, 213),rgb(4, 150, 75));
+  position: absolute;
+  border-radius: 50%;
+  right: -45%;
+  top: -45%;
+  overflow: hidden;
+}
+
+.NGC{
+  color: white;
+  opacity: 0;
+}
+
+.upload-area {
+    text-align: center;
+    color: #049ec9;
+    font-size: 1em;
+    margin-top: 3rem;
+    display:inline;
+}
+
+.upload-area p {
+    margin: 10px 0;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.custom-file-upload:hover {
+    background-color: #0056b3;
+}
+
+/* Hide the default file input */
+#file-upload {
+    display: none;
+}
+/*  Submit button block styling */
+.submit1{
+  width: 140px;
+  height: 50px;
+  background: linear-gradient(to top, rgb(7, 96, 114), rgb(7, 96, 114), #23487f);
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  cursor:pointer;
+  position: absolute;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+ overflow: hidden;
+ margin-top: 12rem;
+}
+
+.submit1 span {
+  
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: top 0.5s;
+}
+
+.btn-text-one {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.btn-text-two {
+  position: absolute;
+  width: 100%;
+  top: 150%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.submit1:hover .btn-text-one {
+  top: -100%;
+}
+
+.submit1:hover .btn-text-two {
+  top: 50%;
+}
+/* Submit Button Style */
+  /* From Uiverse.io by Wendell47 */ 
+.button {
+  display: inline-flex;
+  margin-left: 14rem;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 15px 30px;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10rem;
+  transition: all 0.02s;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(37, 37, 37);
+  z-index: 0;
+  box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+
+}
+
+.button:hover {
+  background: rgb(193, 228, 248);
+  color: rgb(33, 0, 85);
+}
+
+.button:active {
+  transform: scale(0.97);
+}
+
+.hoverEffect {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.hoverEffect div {
+  background: rgb(222, 0, 75);
+  background: linear-gradient(
+    90deg,
+    rgba(222, 0, 75, 1) 0%,
+    rgba(191, 70, 255, 1) 49%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border-radius: 40rem;
+  width: 10rem;
+  height: 10rem;
+  transition: 0.4s;
+  filter: blur(20px);
+  animation: effect infinite 3s linear;
+  opacity: 0.5;
+}
+
+.button:hover .hoverEffect div {
+  width: 8rem;
+  height: 8rem;
+}
+
+@keyframes effect {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Simple button */
+.submit_but{
+  font-size: 12px;
+  height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: top 0.5s;
+  margin-left: 10rem;
+}
+.submit_but:hover{
+  background-color:#23487f;
+  color: rgb(249, 248, 246);
+  border-radius: 4px;
+}
+/*  Display block  for the Genre */
+.display-block{
+    width: 700px;
+    height: 300px;
+    /* background-color: rgba(32, 52, 225, 0.6); */
+    background-image: linear-gradient( 90.1deg,  rgba(8,81,98,1) 14.5%, rgba(198,231,249,1) 135.4% );
+    position:relative;
+    /* margin-top: 25rem; */
+    margin-left: 43.2rem;
+    padding-top: 3px;
+}
+
+/* From Uiverse.io by vinodjangid07 */ 
+.cookieCard {
+  width: 500px;
+  height: 200px;
+  background: linear-gradient(to right,rgb(137, 104, 255),rgb(175, 152, 255));
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cookieCard::before {
+  width: 150px;
+  height: 150px;
+  content: "";
+  background: linear-gradient(to right,rgb(142, 110, 255),rgb(208, 195, 255));
+  position: absolute;
+  /* z-index: 1; */
+  border-radius: 50%;
+  right: -15%;
+  top: -25%;
+}
+
+.cookieHeading {
+  font-size: 2.1em;
+  font-weight: 700;
+  color: rgb(241, 241, 241);
+  z-index: 2;
+  margin-left: 45px;
+}
+.hr0{
+  color: rgba(2, 93, 118, 0.8);
+  width: 5rem;
+}
+.hr{
+  color: rgba(2, 93, 118, 0.8);
+  width: 10rem;
+
+}
+.hr1{
+  color: rgba(2, 93, 118, 0.8);
+  width: 20rem;
+}
+
+.cookieDescription {
+  font-size: 1.9em;
+  color: rgb(241, 241, 241);
+  z-index: 2;
+  margin-left: 3rem;
+}
+/* Next semester kho mei style hei used sw dat pan the  */
+.dataset_img{
+    
+    width: 800px;
+    height:300px;
+  }
+/* chart and graph design */
+/* .chart-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 350px;
+            width: auto;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        } */
+ /* Chart and Graph Canvas Styles */
+.chart-graph-block{
+    height: 300px;
+    width:1000px;
+    background-color: transparent;
+    position: absolute;
+    margin-top: 2rem;
+}
+        
+.chart-graph-title{
+            width: 1390px;
+            height: 100px;
+            background:rgb(236, 236, 233);
+            display: flex;
+            gap: 3rem;
+            padding-top: 2rem;
+}
+  .chart-title{
+            width: 600px;
+            background-color:rgb(7, 96, 114);
+            height: 60px;
+            margin-left: 4rem;
+            border-radius: 20px;
+          }
+ .graph-title{
+            width: 600px;
+            background-color: rgb(7, 96, 114);
+            height: 60px;
+            border-radius: 20px;
+            
+          }
+  .h3{
+            font-size: 25px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+            margin: 10px;
+            margin-left: 12rem;
+          }
+          .h32{
+            font-size: 25px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+            margin: 10px;
+            margin-left: 12rem;
+          }
+.CHART_GRAPH{
+            width: 100px;
+            height: 400px;
+            background: color #e5e5be;
+            display: flex;
+            gap:110px;
+          }
+ .Chart{
+            width: 700px;
+            height:350px;
+            border: 1px solid black;
+            margin-left: 2.5rem;
+          }
+.Graph{
+            width: 700px;
+            height:350px;
+            border: 1px solid black;
+          }
+.chart-img{
+            width: 580px;
+            height: 330px;
+            margin: 10px;
+          }
+.graph-img{
+            width: 580px;
+            height: 330px;
+            margin: 10px;
+          }
+/* Footer_block styling */
+footer {
+    position: absolute;
+    background-color: transparent;
+    padding: 20px;
+    margin-left: 20rem;
+    text-align: center;
+    font-size: 0.9em;
+    color: #333;
+    margin-top: 10rem;
+  }
+  
+  .footer-links a {
+    color: rgb(7, 96, 114);
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+    color:black;
+  }
+  
+  footer p {
+    margin-top: 10px;
+    font-size: 0.8em;
+    color: #0f0f0f;
+  }
+  
