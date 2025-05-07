@@ -1,0 +1,12 @@
+#macOS system files
+.DS_Store
+#What is .DS_Store mean 
+#It means Desktop Service Store, it is hidden system file created by macOS in folders
+#to store custom attributes about how that folders should bisplayed in Finder.
+# What .DS_Store Contains:- 
+# ---- It stores metatdata like:
+# __ Folder view settings (icon vs list vs column view)____ Icon positions ____ Window size and position ___ Background image or color settings
+
+#Python cache
+__pycache__/
+*.pyc
