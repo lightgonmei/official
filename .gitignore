@@ -10,3 +10,5 @@
 #Python cache
 __pycache__/
 *.pyc
+#N.B:- To remove folder in git command line.
+#-------> git rm -r 
